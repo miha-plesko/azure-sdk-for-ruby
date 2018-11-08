@@ -9,8 +9,8 @@ module Azure::Profiles::Latest
     ImagesOperations = Azure::CognitiveServices::ImageSearch::V1_0::ImagesOperations
 
     module Models
-      Response = Azure::CognitiveServices::ImageSearch::V1_0::Models::Response
       ResponseBase = Azure::CognitiveServices::ImageSearch::V1_0::Models::ResponseBase
+      Response = Azure::CognitiveServices::ImageSearch::V1_0::Models::Response
       Query = Azure::CognitiveServices::ImageSearch::V1_0::Models::Query
       WebPage = Azure::CognitiveServices::ImageSearch::V1_0::Models::WebPage
       SearchResultsAnswer = Azure::CognitiveServices::ImageSearch::V1_0::Models::SearchResultsAnswer
@@ -57,10 +57,10 @@ module Azure::Profiles::Latest
       Currency = Azure::CognitiveServices::ImageSearch::V1_0::Models::Currency
       ItemAvailability = Azure::CognitiveServices::ImageSearch::V1_0::Models::ItemAvailability
       ImageAspect = Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageAspect
-      ErrorResponse = Azure::CognitiveServices::ImageSearch::V1_0::Models::ErrorResponse
       ImageColor = Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageColor
       Freshness = Azure::CognitiveServices::ImageSearch::V1_0::Models::Freshness
       ImageContent = Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageContent
+      ErrorResponse = Azure::CognitiveServices::ImageSearch::V1_0::Models::ErrorResponse
       ImageLicense = Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageLicense
       ImageSize = Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageSize
       ImageType = Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageType
@@ -99,11 +99,11 @@ module Azure::Profiles::Latest
       end
 
       class ModelClasses
-        def response
-          Azure::CognitiveServices::ImageSearch::V1_0::Models::Response
-        end
         def response_base
           Azure::CognitiveServices::ImageSearch::V1_0::Models::ResponseBase
+        end
+        def response
+          Azure::CognitiveServices::ImageSearch::V1_0::Models::Response
         end
         def query
           Azure::CognitiveServices::ImageSearch::V1_0::Models::Query
@@ -243,9 +243,6 @@ module Azure::Profiles::Latest
         def image_aspect
           Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageAspect
         end
-        def error_response
-          Azure::CognitiveServices::ImageSearch::V1_0::Models::ErrorResponse
-        end
         def image_color
           Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageColor
         end
@@ -254,6 +251,9 @@ module Azure::Profiles::Latest
         end
         def image_content
           Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageContent
+        end
+        def error_response
+          Azure::CognitiveServices::ImageSearch::V1_0::Models::ErrorResponse
         end
         def image_license
           Azure::CognitiveServices::ImageSearch::V1_0::Models::ImageLicense

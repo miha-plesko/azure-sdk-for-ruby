@@ -7,11 +7,11 @@ require 'azure_mgmt_storage'
 module Azure::Profiles::Latest
   module Storage
     module Mgmt
+      Operations = Azure::Storage::Mgmt::V2018_07_01::Operations
       StorageAccounts = Azure::Storage::Mgmt::V2018_07_01::StorageAccounts
       Skus = Azure::Storage::Mgmt::V2018_07_01::Skus
-      Usages = Azure::Storage::Mgmt::V2018_07_01::Usages
       BlobContainers = Azure::Storage::Mgmt::V2018_07_01::BlobContainers
-      Operations = Azure::Storage::Mgmt::V2018_07_01::Operations
+      Usages = Azure::Storage::Mgmt::V2018_07_01::Usages
 
       module Models
         ManagementPoliciesRulesSetParameter = Azure::Storage::Mgmt::V2018_03_01_preview::Models::ManagementPoliciesRulesSetParameter
@@ -33,13 +33,13 @@ module Azure::Profiles::Latest
         SkuTier = Azure::Storage::Mgmt::V2018_07_01::Models::SkuTier
         Kind = Azure::Storage::Mgmt::V2018_07_01::Models::Kind
         VirtualNetworkRule = Azure::Storage::Mgmt::V2018_07_01::Models::VirtualNetworkRule
-        AccessTier = Azure::Storage::Mgmt::V2018_07_01::Models::AccessTier
         Reason = Azure::Storage::Mgmt::V2018_07_01::Models::Reason
-        AccountStatus = Azure::Storage::Mgmt::V2018_07_01::Models::AccountStatus
+        KeyPermission = Azure::Storage::Mgmt::V2018_07_01::Models::KeyPermission
         State = Azure::Storage::Mgmt::V2018_07_01::Models::State
+        AccessTier = Azure::Storage::Mgmt::V2018_07_01::Models::AccessTier
         UsageUnit = Azure::Storage::Mgmt::V2018_07_01::Models::UsageUnit
         UsageName = Azure::Storage::Mgmt::V2018_07_01::Models::UsageName
-        KeyPermission = Azure::Storage::Mgmt::V2018_07_01::Models::KeyPermission
+        AccountStatus = Azure::Storage::Mgmt::V2018_07_01::Models::AccountStatus
         StorageAccountCreateParameters = Azure::Storage::Mgmt::V2018_07_01::Models::StorageAccountCreateParameters
         Permissions = Azure::Storage::Mgmt::V2018_07_01::Models::Permissions
         StorageAccountUpdateParameters = Azure::Storage::Mgmt::V2018_07_01::Models::StorageAccountUpdateParameters
@@ -49,52 +49,52 @@ module Azure::Profiles::Latest
         ListAccountSasResponse = Azure::Storage::Mgmt::V2018_07_01::Models::ListAccountSasResponse
         KeyVaultProperties = Azure::Storage::Mgmt::V2018_07_01::Models::KeyVaultProperties
         ServiceSasParameters = Azure::Storage::Mgmt::V2018_07_01::Models::ServiceSasParameters
-        OperationListResult = Azure::Storage::Mgmt::V2018_07_01::Models::OperationListResult
         ListServiceSasResponse = Azure::Storage::Mgmt::V2018_07_01::Models::ListServiceSasResponse
-        OperationDisplay = Azure::Storage::Mgmt::V2018_07_01::Models::OperationDisplay
-        ListContainerItems = Azure::Storage::Mgmt::V2018_07_01::Models::ListContainerItems
         Operation = Azure::Storage::Mgmt::V2018_07_01::Models::Operation
+        OperationDisplay = Azure::Storage::Mgmt::V2018_07_01::Models::OperationDisplay
+        OperationListResult = Azure::Storage::Mgmt::V2018_07_01::Models::OperationListResult
+        ListContainerItems = Azure::Storage::Mgmt::V2018_07_01::Models::ListContainerItems
         LegalHoldProperties = Azure::Storage::Mgmt::V2018_07_01::Models::LegalHoldProperties
         Restriction = Azure::Storage::Mgmt::V2018_07_01::Models::Restriction
-        CheckNameAvailabilityResult = Azure::Storage::Mgmt::V2018_07_01::Models::CheckNameAvailabilityResult
-        TagProperty = Azure::Storage::Mgmt::V2018_07_01::Models::TagProperty
+        LegalHold = Azure::Storage::Mgmt::V2018_07_01::Models::LegalHold
         UpdateHistoryProperty = Azure::Storage::Mgmt::V2018_07_01::Models::UpdateHistoryProperty
         ImmutabilityPolicyProperties = Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyProperties
-        ServiceSpecification = Azure::Storage::Mgmt::V2018_07_01::Models::ServiceSpecification
+        CheckNameAvailabilityResult = Azure::Storage::Mgmt::V2018_07_01::Models::CheckNameAvailabilityResult
+        BlobContainer = Azure::Storage::Mgmt::V2018_07_01::Models::BlobContainer
         StorageSkuListResult = Azure::Storage::Mgmt::V2018_07_01::Models::StorageSkuListResult
+        TagProperty = Azure::Storage::Mgmt::V2018_07_01::Models::TagProperty
+        ServiceSpecification = Azure::Storage::Mgmt::V2018_07_01::Models::ServiceSpecification
+        ImmutabilityPolicy = Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicy
         Dimension = Azure::Storage::Mgmt::V2018_07_01::Models::Dimension
-        LegalHold = Azure::Storage::Mgmt::V2018_07_01::Models::LegalHold
+        ReasonCode = Azure::Storage::Mgmt::V2018_07_01::Models::ReasonCode
         MetricSpecification = Azure::Storage::Mgmt::V2018_07_01::Models::MetricSpecification
         ListContainerItem = Azure::Storage::Mgmt::V2018_07_01::Models::ListContainerItem
-        BlobContainer = Azure::Storage::Mgmt::V2018_07_01::Models::BlobContainer
+        Action = Azure::Storage::Mgmt::V2018_07_01::Models::Action
         Usage = Azure::Storage::Mgmt::V2018_07_01::Models::Usage
         Bypass = Azure::Storage::Mgmt::V2018_07_01::Models::Bypass
-        ReasonCode = Azure::Storage::Mgmt::V2018_07_01::Models::ReasonCode
+        DefaultAction = Azure::Storage::Mgmt::V2018_07_01::Models::DefaultAction
         SkuName = Azure::Storage::Mgmt::V2018_07_01::Models::SkuName
-        ImmutabilityPolicy = Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicy
-        Action = Azure::Storage::Mgmt::V2018_07_01::Models::Action
-        SignedResourceTypes = Azure::Storage::Mgmt::V2018_07_01::Models::SignedResourceTypes
         KeySource = Azure::Storage::Mgmt::V2018_07_01::Models::KeySource
         SignedResource = Azure::Storage::Mgmt::V2018_07_01::Models::SignedResource
+        PublicAccess = Azure::Storage::Mgmt::V2018_07_01::Models::PublicAccess
+        SignedResourceTypes = Azure::Storage::Mgmt::V2018_07_01::Models::SignedResourceTypes
+        HttpProtocol = Azure::Storage::Mgmt::V2018_07_01::Models::HttpProtocol
         Sku = Azure::Storage::Mgmt::V2018_07_01::Models::Sku
         Services = Azure::Storage::Mgmt::V2018_07_01::Models::Services
-        HttpProtocol = Azure::Storage::Mgmt::V2018_07_01::Models::HttpProtocol
-        LeaseDuration = Azure::Storage::Mgmt::V2018_07_01::Models::LeaseDuration
-        PublicAccess = Azure::Storage::Mgmt::V2018_07_01::Models::PublicAccess
-        DefaultAction = Azure::Storage::Mgmt::V2018_07_01::Models::DefaultAction
+        LeaseStatus = Azure::Storage::Mgmt::V2018_07_01::Models::LeaseStatus
         LeaseState = Azure::Storage::Mgmt::V2018_07_01::Models::LeaseState
-        TrackedResource = Azure::Storage::Mgmt::V2018_07_01::Models::TrackedResource
+        LeaseDuration = Azure::Storage::Mgmt::V2018_07_01::Models::LeaseDuration
         ImmutabilityPolicyState = Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyState
+        ImmutabilityPolicyUpdateType = Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyUpdateType
+        TrackedResource = Azure::Storage::Mgmt::V2018_07_01::Models::TrackedResource
         IPRule = Azure::Storage::Mgmt::V2018_07_01::Models::IPRule
         NetworkRuleSet = Azure::Storage::Mgmt::V2018_07_01::Models::NetworkRuleSet
         AzureEntityResource = Azure::Storage::Mgmt::V2018_07_01::Models::AzureEntityResource
         ProxyResource = Azure::Storage::Mgmt::V2018_07_01::Models::ProxyResource
-        ImmutabilityPolicyUpdateType = Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyUpdateType
-        LeaseStatus = Azure::Storage::Mgmt::V2018_07_01::Models::LeaseStatus
       end
 
       class StorageManagementClass
-        attr_reader :storage_accounts, :skus, :usages, :blob_containers, :operations, :configurable, :base_url, :options, :model_classes
+        attr_reader :operations, :storage_accounts, :skus, :blob_containers, :usages, :configurable, :base_url, :options, :model_classes
 
         def initialize(configurable, base_url=nil, options=nil)
           @configurable, @base_url, @options = configurable, base_url, options
@@ -110,11 +110,11 @@ module Azure::Profiles::Latest
             @client_1.subscription_id = configurable.subscription_id
           end
           add_telemetry(@client_1)
+          @operations = @client_1.operations
           @storage_accounts = @client_1.storage_accounts
           @skus = @client_1.skus
-          @usages = @client_1.usages
           @blob_containers = @client_1.blob_containers
-          @operations = @client_1.operations
+          @usages = @client_1.usages
 
           @model_classes = ModelClasses.new
         end
@@ -192,17 +192,17 @@ module Azure::Profiles::Latest
           def virtual_network_rule
             Azure::Storage::Mgmt::V2018_07_01::Models::VirtualNetworkRule
           end
-          def access_tier
-            Azure::Storage::Mgmt::V2018_07_01::Models::AccessTier
-          end
           def reason
             Azure::Storage::Mgmt::V2018_07_01::Models::Reason
           end
-          def account_status
-            Azure::Storage::Mgmt::V2018_07_01::Models::AccountStatus
+          def key_permission
+            Azure::Storage::Mgmt::V2018_07_01::Models::KeyPermission
           end
           def state
             Azure::Storage::Mgmt::V2018_07_01::Models::State
+          end
+          def access_tier
+            Azure::Storage::Mgmt::V2018_07_01::Models::AccessTier
           end
           def usage_unit
             Azure::Storage::Mgmt::V2018_07_01::Models::UsageUnit
@@ -210,8 +210,8 @@ module Azure::Profiles::Latest
           def usage_name
             Azure::Storage::Mgmt::V2018_07_01::Models::UsageName
           end
-          def key_permission
-            Azure::Storage::Mgmt::V2018_07_01::Models::KeyPermission
+          def account_status
+            Azure::Storage::Mgmt::V2018_07_01::Models::AccountStatus
           end
           def storage_account_create_parameters
             Azure::Storage::Mgmt::V2018_07_01::Models::StorageAccountCreateParameters
@@ -240,20 +240,20 @@ module Azure::Profiles::Latest
           def service_sas_parameters
             Azure::Storage::Mgmt::V2018_07_01::Models::ServiceSasParameters
           end
-          def operation_list_result
-            Azure::Storage::Mgmt::V2018_07_01::Models::OperationListResult
-          end
           def list_service_sas_response
             Azure::Storage::Mgmt::V2018_07_01::Models::ListServiceSasResponse
+          end
+          def operation
+            Azure::Storage::Mgmt::V2018_07_01::Models::Operation
           end
           def operation_display
             Azure::Storage::Mgmt::V2018_07_01::Models::OperationDisplay
           end
+          def operation_list_result
+            Azure::Storage::Mgmt::V2018_07_01::Models::OperationListResult
+          end
           def list_container_items
             Azure::Storage::Mgmt::V2018_07_01::Models::ListContainerItems
-          end
-          def operation
-            Azure::Storage::Mgmt::V2018_07_01::Models::Operation
           end
           def legal_hold_properties
             Azure::Storage::Mgmt::V2018_07_01::Models::LegalHoldProperties
@@ -261,11 +261,8 @@ module Azure::Profiles::Latest
           def restriction
             Azure::Storage::Mgmt::V2018_07_01::Models::Restriction
           end
-          def check_name_availability_result
-            Azure::Storage::Mgmt::V2018_07_01::Models::CheckNameAvailabilityResult
-          end
-          def tag_property
-            Azure::Storage::Mgmt::V2018_07_01::Models::TagProperty
+          def legal_hold
+            Azure::Storage::Mgmt::V2018_07_01::Models::LegalHold
           end
           def update_history_property
             Azure::Storage::Mgmt::V2018_07_01::Models::UpdateHistoryProperty
@@ -273,17 +270,29 @@ module Azure::Profiles::Latest
           def immutability_policy_properties
             Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyProperties
           end
-          def service_specification
-            Azure::Storage::Mgmt::V2018_07_01::Models::ServiceSpecification
+          def check_name_availability_result
+            Azure::Storage::Mgmt::V2018_07_01::Models::CheckNameAvailabilityResult
+          end
+          def blob_container
+            Azure::Storage::Mgmt::V2018_07_01::Models::BlobContainer
           end
           def storage_sku_list_result
             Azure::Storage::Mgmt::V2018_07_01::Models::StorageSkuListResult
           end
+          def tag_property
+            Azure::Storage::Mgmt::V2018_07_01::Models::TagProperty
+          end
+          def service_specification
+            Azure::Storage::Mgmt::V2018_07_01::Models::ServiceSpecification
+          end
+          def immutability_policy
+            Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicy
+          end
           def dimension
             Azure::Storage::Mgmt::V2018_07_01::Models::Dimension
           end
-          def legal_hold
-            Azure::Storage::Mgmt::V2018_07_01::Models::LegalHold
+          def reason_code
+            Azure::Storage::Mgmt::V2018_07_01::Models::ReasonCode
           end
           def metric_specification
             Azure::Storage::Mgmt::V2018_07_01::Models::MetricSpecification
@@ -291,8 +300,8 @@ module Azure::Profiles::Latest
           def list_container_item
             Azure::Storage::Mgmt::V2018_07_01::Models::ListContainerItem
           end
-          def blob_container
-            Azure::Storage::Mgmt::V2018_07_01::Models::BlobContainer
+          def action
+            Azure::Storage::Mgmt::V2018_07_01::Models::Action
           end
           def usage
             Azure::Storage::Mgmt::V2018_07_01::Models::Usage
@@ -300,20 +309,11 @@ module Azure::Profiles::Latest
           def bypass
             Azure::Storage::Mgmt::V2018_07_01::Models::Bypass
           end
-          def reason_code
-            Azure::Storage::Mgmt::V2018_07_01::Models::ReasonCode
+          def default_action
+            Azure::Storage::Mgmt::V2018_07_01::Models::DefaultAction
           end
           def sku_name
             Azure::Storage::Mgmt::V2018_07_01::Models::SkuName
-          end
-          def immutability_policy
-            Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicy
-          end
-          def action
-            Azure::Storage::Mgmt::V2018_07_01::Models::Action
-          end
-          def signed_resource_types
-            Azure::Storage::Mgmt::V2018_07_01::Models::SignedResourceTypes
           end
           def key_source
             Azure::Storage::Mgmt::V2018_07_01::Models::KeySource
@@ -321,32 +321,38 @@ module Azure::Profiles::Latest
           def signed_resource
             Azure::Storage::Mgmt::V2018_07_01::Models::SignedResource
           end
+          def public_access
+            Azure::Storage::Mgmt::V2018_07_01::Models::PublicAccess
+          end
+          def signed_resource_types
+            Azure::Storage::Mgmt::V2018_07_01::Models::SignedResourceTypes
+          end
+          def http_protocol
+            Azure::Storage::Mgmt::V2018_07_01::Models::HttpProtocol
+          end
           def sku
             Azure::Storage::Mgmt::V2018_07_01::Models::Sku
           end
           def services
             Azure::Storage::Mgmt::V2018_07_01::Models::Services
           end
-          def http_protocol
-            Azure::Storage::Mgmt::V2018_07_01::Models::HttpProtocol
-          end
-          def lease_duration
-            Azure::Storage::Mgmt::V2018_07_01::Models::LeaseDuration
-          end
-          def public_access
-            Azure::Storage::Mgmt::V2018_07_01::Models::PublicAccess
-          end
-          def default_action
-            Azure::Storage::Mgmt::V2018_07_01::Models::DefaultAction
+          def lease_status
+            Azure::Storage::Mgmt::V2018_07_01::Models::LeaseStatus
           end
           def lease_state
             Azure::Storage::Mgmt::V2018_07_01::Models::LeaseState
           end
-          def tracked_resource
-            Azure::Storage::Mgmt::V2018_07_01::Models::TrackedResource
+          def lease_duration
+            Azure::Storage::Mgmt::V2018_07_01::Models::LeaseDuration
           end
           def immutability_policy_state
             Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyState
+          end
+          def immutability_policy_update_type
+            Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyUpdateType
+          end
+          def tracked_resource
+            Azure::Storage::Mgmt::V2018_07_01::Models::TrackedResource
           end
           def iprule
             Azure::Storage::Mgmt::V2018_07_01::Models::IPRule
@@ -359,12 +365,6 @@ module Azure::Profiles::Latest
           end
           def proxy_resource
             Azure::Storage::Mgmt::V2018_07_01::Models::ProxyResource
-          end
-          def immutability_policy_update_type
-            Azure::Storage::Mgmt::V2018_07_01::Models::ImmutabilityPolicyUpdateType
-          end
-          def lease_status
-            Azure::Storage::Mgmt::V2018_07_01::Models::LeaseStatus
           end
         end
       end
